@@ -25,13 +25,13 @@ const HeroSection = () => {
                 <div
                     className="relative mt-7 px-4 flex flex-col md:flex-row items-center justify-center lg:mt-24 lg:gap-16 text-[#FFF]">
                     <div className={'mt-8'}>
-                        <h2 className="text-[6rem] font-normal text-[#EBEBEB] leading-none">
+                        <h2 className="text-[6rem] md:text-[4rem] font-normal text-[#EBEBEB] leading-none">
                             <div>Your <span className="text-[#9CDBA6]">Health</span></div>
                             <div>Journey,</div>
                             <div>Made Simple</div>
                         </h2>
 
-                        <p className="mt-10 text-[10px] font-light md:text-xl">
+                        <p className="mt-10 md:text-[15px] font-light lg:text-xl">
                             Affordable prices. Quick delivery. Trusted care. <br/>Shop everything you need for a
                             healthier
                             tomorrow.
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
             {/* Render Images Below Heading on Mobile */}
             {isMobile && (
-                <div className={`relative mt-7 px-4 flex flex-col text-[#FFF]`}>
+                <div className={`relative mt-7 px-4 flex flex-col justify-center items-center text-[#FFF]`}>
                     <div className="mt-8">
                         <h2 className="text-6xl md:text-6xl lg:text-[6rem] font-normal text-[#EBEBEB] leading-none">
                             <div>Your <span className="text-[#9CDBA6]">Health</span></div>

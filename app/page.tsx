@@ -7,7 +7,7 @@ export default function Home() {
     const videoRef = useRef(null);
 
     return (
-        <div className="bg-[#468585] px-4 py-9 relative w-full h-[125vh] lg:h-screen">
+        <div className="bg-[#468585] px-4 py-9 relative w-full h-max 2xl:h-screen 2xl:flex justify-center items-center">
             {/* Video Background */}
             <video
                 ref={videoRef}
