@@ -46,7 +46,7 @@ const Navbar = () => {
 
             {/* Expandable Mobile Menu */}
             <div
-                className={`fixed left-4 right-4 top-4 rounded-2xl z-40 h-[90%] bg-white text-[#468585] transform transition-transform duration-300 ${
+                className={`fixed left-4 right-4 top-4 rounded-2xl z-40 h-[95%] bg-white text-[#468585] transform transition-transform duration-300 ${
                     toggleNav ? "translate-x-0" : "-translate-x-[-120%]"
                 }`}
             >
