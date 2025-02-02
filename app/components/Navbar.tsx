@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <header>
             <nav
-                className="fixed instrument-sans top-4 left-4 right-4 z-50 flex items-center justify-between px-6 py-3 bg-white text-[#468585] rounded-2xl lg:px-16 lg:py-4"
+                className="fixed instrument-sans top-4 left-4 right-4 z-50 flex items-center justify-between px-6 py-3 bg-white text-[#468585] rounded-md lg:rounded-2xl lg:px-16 lg:py-4"
             >
                 {/* Logo Section */}
                 <div className="flex items-center justify-between gap-4">
