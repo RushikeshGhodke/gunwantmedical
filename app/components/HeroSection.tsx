@@ -64,7 +64,7 @@ const HeroSection = () => {
 
             {/* Render Images Below Heading on Mobile */}
             {isMobile && (
-                <div className={`relative mt-14 px-4 flex flex-col justify-center items-center text-[#FFF]`}>
+                <div className={`relative mt-14 mb-10 px-4 flex flex-col justify-center items-center text-[#FFF]`}>
                     <div className="mt-8">
                         <h2 className="text-6xl md:text-6xl lg:text-[6rem] font-normal text-[#EBEBEB] leading-none">
                             <div>Your <span className="text-[#9CDBA6]">Health</span></div>
