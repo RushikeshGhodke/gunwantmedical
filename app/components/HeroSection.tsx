@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
             {!isMobile && (
 
                 <div
-                    className="relative mt-7 px-4 flex flex-col md:flex-row items-center justify-center lg:mt-24 lg:gap-16 text-[#FFF]">
+                    className="relative mt-7 px-4 h-dvh flex flex-col md:flex-row items-center justify-center lg:mt-10 lg:gap-16 text-[#FFF]">
                     <div className={'mt-8'}>
                         <h2 className="text-[6rem] md:text-[4rem] font-normal text-[#EBEBEB] leading-none">
                             <div>Your <span className="text-[#9CDBA6]">Health</span></div>
@@ -32,26 +32,29 @@ const HeroSection = () => {
                         </h2>
 
                         <p className="mt-10 md:text-[15px] font-light lg:text-xl">
-                            Affordable prices. Quick delivery. Trusted care. <br/>Shop everything you need for a
+                            Affordable prices. Quick delivery. Trusted care. <br />Shop everything you need for a
                             healthier
                             tomorrow.
                         </p>
                         <p className="mt-12 flex lg:text-2xl items-center justify-center md:justify-start font-light gap-2">
-                            ⭐ 4.8/5 rated on
                             <span>
-                        <Image src={'/google.png'} width={32} height={32} alt={'Google'}/>
-                    </span>
+                                <Image src={'/star.png'} width={26} height={26} alt={'Star'} />
+                            </span>
+                            4.8 / 5 rated on
+                            <span>
+                                <Image src={'/google.png'} width={26} height={26} alt={'Google'} />
+                            </span>
                         </p>
                     </div>
 
                     {/* Image Grid */}
                     <div className="flex flex-row gap-7">
                         <div className="flex flex-col">
-                            <img className={`w-[240px]`} src={'/white-shelf.png'} alt={'Shelf'}/>
+                            <img className={`w-[240px]`} src={'/white-shelf.png'} alt={'Shelf'} />
                         </div>
                         <div className="flex flex-col gap-7">
-                            <img className={`w-[260px]`} src={'/orange-medicine.png'} alt={'Medicine'}/>
-                            <img className={`w-[260px]`} src={'/org-shelf.png'} alt={'Shelf'}/>
+                            <img className={`w-[260px]`} src={'/orange-medicine.png'} alt={'Medicine'} />
+                            <img className={`w-[260px]`} src={'/org-shelf.png'} alt={'Shelf'} />
                         </div>
                     </div>
 
@@ -61,7 +64,7 @@ const HeroSection = () => {
 
             {/* Render Images Below Heading on Mobile */}
             {isMobile && (
-                <div className={`relative mt-7 px-4 flex flex-col justify-center items-center text-[#FFF]`}>
+                <div className={`relative mt-14 px-4 flex flex-col justify-center items-center text-[#FFF]`}>
                     <div className="mt-8">
                         <h2 className="text-6xl md:text-6xl lg:text-[6rem] font-normal text-[#EBEBEB] leading-none">
                             <div>Your <span className="text-[#9CDBA6]">Health</span></div>
@@ -71,24 +74,27 @@ const HeroSection = () => {
 
                         <div className="flex flex-row md:flex-row gap-5 items-end mt-10 md:mt-0">
                             <div className="flex flex-col">
-                                <img className="w-[180px] md:w-[240px]" src={'/white-shelf.png'} alt={'Shelf'}/>
+                                <img className="w-[180px] md:w-[240px]" src={'/white-shelf.png'} alt={'Shelf'} />
                             </div>
                             <div className="flex flex-col gap-5">
                                 <img className="w-[180px] md:w-[260px]" src={'/orange-medicine.png'}
-                                     alt={'Medicine'}/>
-                                <img className="w-[180px] md:w-[260px]" src={'/org-shelf.png'} alt={'Shelf'}/>
+                                    alt={'Medicine'} />
+                                <img className="w-[180px] md:w-[260px]" src={'/org-shelf.png'} alt={'Shelf'} />
                             </div>
                         </div>
 
                         <p className="mt-6 md:mt-10 font-light text-[16px] md:text-xl">
-                            Affordable prices. Quick delivery. Trusted care. <br/>Shop everything you need for a
+                            Affordable prices. Quick delivery. Trusted care. <br />Shop everything you need for a
                             healthier tomorrow.
                         </p>
                         <p className="mt-8 flex items-center font-light gap-2">
-                            ⭐ 4.8/5 rated on
                             <span>
-                            <Image src={'/google.png'} width={26} height={26} alt={'Google'}/>
-                        </span>
+                                <Image src={'/star.png'} width={26} height={26} alt={'Star'} />
+                            </span>
+                            4.8/5 rated on
+                            <span>
+                                <Image src={'/google.png'} width={26} height={26} alt={'Google'} />
+                            </span>
                         </p>
                     </div>
 
