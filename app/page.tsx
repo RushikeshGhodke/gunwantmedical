@@ -8,6 +8,7 @@ import Gallery from "./components/Gallery";
 import Delivery from "./components/Delivery";
 import FeaturedCategories from "./components/FeaturedCategories";
 import Branding from "./components/Branding";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -64,6 +65,10 @@ export default function Home() {
 
                 <section className="relative z-20 bg-[#9CDBA6]">
                     <Branding/>
+                </section>
+
+                <section className="relative z-20 bg-white">
+                    <Testimonials/>
                 </section>
             </div>
         </>

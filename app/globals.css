@@ -21,3 +21,28 @@ body {
 .stolzl {
   font-family: 'Stolzl', serif;
 }
+
+/* styles/globals.css */
+
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.testimonial-wrapper {
+  width: 100%;  /* Full width of the container */
+  overflow: hidden;  /* Hide the overflowing content */
+}
+
+.testimonial-container {
+  display: flex;  /* Flex layout for horizontal stacking */
+}
+

@@ -1,0 +1,36 @@
+/* styles/Testimonial.module.css */
+
+/* Keyframes for continuous scrolling without gap */
+@keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start at the left */
+    }
+    100% {
+      transform: translateX(-100%); /* End at the left after one full cycle */
+    }
+  }
+  
+  .testimonialWrapper {
+    width: 100%;
+    overflow: hidden; /* Hide the overflowing testimonials */
+  }
+  
+  .testimonialContainer {
+    display: flex; /* Layout testimonials in a row */
+    animation: marquee 40s linear infinite; /* Make it loop smoothly */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  .testimonialCard {
+    border: 2px solid #9CDBA6;
+    border-radius: 30px;
+    padding: 2.5rem;
+    width: 320px; /* Card width */
+    margin-right: 1rem; /* Space between cards */
+  }
+  
+  /* Remove margin on last card */
+  .testimonialContainer > .testimonialCard:last-child {
+    margin-right: 0;
+  }
+  
