@@ -4,6 +4,10 @@ import Navbar from "@/app/components/Navbar";
 import HeroSection from "@/app/components/HeroSection";
 import WhyChoose from "./components/WhyChoose";
 import MadeSimple from "./components/MadeSimple";
+import Gallery from "./components/Gallery";
+import Delivery from "./components/Delivery";
+import FeaturedCategories from "./components/FeaturedCategories";
+import Branding from "./components/Branding";
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -41,11 +45,25 @@ export default function Home() {
                     <MadeSimple />
                 </section>
 
+                <section className="relative z-20 bg-[#343333]">
+                    <Gallery />
+                </section>
+
+                <section className="relative z-20 bg-white">
+                    <Delivery />
+                </section>
+
                 {/* Any section that needs video visible, just remove bg-white */}
-                <section className="relative z-10 h-[100vh]">
-                    <div className="h-full flex items-center justify-center text-white">
-                        This section will have the video background.
-                    </div>
+                <section className="relative z-10 h-[60vh]">
+                
+                </section>
+
+                <section className="relative z-20 bg-white">
+                    <FeaturedCategories/>
+                </section>
+
+                <section className="relative z-20 bg-[#9CDBA6]">
+                    <Branding/>
                 </section>
             </div>
         </>

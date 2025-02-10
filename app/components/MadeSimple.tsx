@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const MadeSimple = () => {
     return (
@@ -68,6 +69,21 @@ const MadeSimple = () => {
                 </div>
             </div>
 
+
+            <div>
+                <p className="mt-12 lg:mt-32 lg:mb-20 gap-2 flex items-center justify-center font-light">
+                    <span className='flex items-center justify-center mb-1.5 mr-2'>
+                        <img src={'/star.png'} className='w-7 mt-1' alt={'Star'} />
+                    </span>
+                    <div className='flex gap-2'>
+                        <span className='font-[400] lg:text-4xl text-[#474747]'>4.8 / 5</span> 
+                        <span className='lg:text-[30px] text-[#474747]'>rated on</span>
+                    </div>
+                    <span>
+                        <img src={'/google-full-logo.png'} className='w-20 lg:w-52 lg:mt-4 lg:ml-2' alt={'Google'} />
+                    </span>
+                </p>
+            </div>
         </div>
     )
 }
