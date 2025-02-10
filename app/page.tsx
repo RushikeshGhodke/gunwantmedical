@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Navbar from "@/app/components/Navbar";
 import HeroSection from "@/app/components/HeroSection";
 import WhyChoose from "./components/WhyChoose";
+import MadeSimple from "./components/MadeSimple";
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -28,12 +29,16 @@ export default function Home() {
 
             {/* Main Content */}
             <div className="relative z-10">
-                {/* <Navbar /> */}
+                <Navbar />
                 <HeroSection />
 
                 {/* Why Choose Us Section - Override video using bg-white */}
                 <section className="relative z-20 bg-white">
                     <WhyChoose />
+                </section>
+
+                <section className="relative z-20 bg-white">
+                    <MadeSimple />
                 </section>
 
                 {/* Any section that needs video visible, just remove bg-white */}

@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 const WhyChoose = () => {
     return (
-        <div className='h-max bg-[#EEEEEE] flex flex-col items-center gap-16 px-4 sm:px-8 md:px-16'>
+        <div className='h-max bg-[#EEEEEE] flex flex-col items-center gap-16 px-6 sm:px-8 md:px-16'>
             <h1 className='text-[#252525] text-[32px] sm:text-[40px] mt-16 text-center'>
                 Why choose <span className='text-[#468585]'>us?</span>
             </h1>
 
-            <div className='flex flex-col sm:flex-row gap-10 justify-center items-center'>
+            <div className='flex flex-col sm:flex-row gap-10 justify-center px-8 items-center flex-wrap'>
                 {/* card */}
                 <div className='w-full sm:w-72 bg-[#468585] p-6 sm:p-10 text-white rounded-xl drop-shadow-xl'>
                     <Image className='text-[#525252] mt-6' src={'/bestprices.svg'} width={85} height={85} alt={'Best Prices'} />
@@ -41,7 +41,7 @@ const WhyChoose = () => {
                 </div>
             </div>
 
-            <p className='text-[#7A7676] text-sm sm:text-base text-center font-semibold mt-8 mb-10'>
+            <p className='text-[#7A7676] text-sm sm:text-lg text-center font-semibold mt-8 mb-24'>
                 We ensure trusted healthcare with quality products, <br /> great value, and dedicated customer support.
             </p>
         </div>
