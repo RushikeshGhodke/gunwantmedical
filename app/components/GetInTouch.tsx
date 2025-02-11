@@ -15,7 +15,7 @@ const GetInTouch = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='flex flex-row gap-5 items-start'>
                         <img src="./getintouch-call.png" alt="Call" className='w-6 lg:w-8' />
-                        <p className='text-[#949494] lg:text-lg'>7058812287</p>
+                        <p className='text-[#949494] lg:text-lg'>98232 65871</p>
                     </div>
 
                     <div className='h-[1px] bg-[#D9D9D9] w-full'></div>
