@@ -9,6 +9,10 @@ import Delivery from "./components/Delivery";
 import FeaturedCategories from "./components/FeaturedCategories";
 import Branding from "./components/Branding";
 import Testimonials from "./components/Testimonials";
+import GetInTouch from "./components/GetInTouch";
+import Footer from "./components/Footer";
+import Developer from "./components/Developer";
+import MapEmbed from "./components/MapEmbed";
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -46,7 +50,7 @@ export default function Home() {
                     <MadeSimple />
                 </section>
 
-                <section className="relative z-20 bg-[#343333]">
+                <section id="gallery" className="relative z-20 bg-[#343333]">
                     <Gallery />
                 </section>
 
@@ -56,19 +60,35 @@ export default function Home() {
 
                 {/* Any section that needs video visible, just remove bg-white */}
                 <section className="relative z-10 h-[60vh]">
-                
+
                 </section>
 
-                <section className="relative z-20 bg-white">
-                    <FeaturedCategories/>
+                <section id="categories" className="relative z-20 bg-white">
+                    <FeaturedCategories />
                 </section>
 
                 <section className="relative z-20 bg-[#9CDBA6]">
-                    <Branding/>
+                    <Branding />
                 </section>
 
                 <section className="relative z-20 bg-white">
-                    <Testimonials/>
+                    <Testimonials />
+                </section>
+
+                <section className="relative z-20 bg-white">
+                    <MapEmbed />
+                </section>
+
+                <section id="contact" className="relative z-20 bg-white">
+                    <GetInTouch />
+                </section>
+
+                <section className="relative z-20 bg-[#024444]">
+                    <Footer />
+                </section>
+
+                <section className="relative z-20 bg-[#024444]">
+                    <Developer />
                 </section>
             </div>
         </>

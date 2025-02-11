@@ -18,7 +18,7 @@ const HeroSection = () => {
 
 
     return (
-        <div>
+        <div id="home">
             {/* Keep Original Layout for Desktop */}
             {!isMobile && (
 

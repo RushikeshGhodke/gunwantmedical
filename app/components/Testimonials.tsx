@@ -2,7 +2,8 @@ import React from 'react'
 
 const Testimonials = () => {
     return (
-        <div className='h-max bg-[#EEEEEE] flex flex-col items-center gap-16 px-6 sm:px-8 md:px-16'>
+        <div className='h-[270vh] lg:h-[130vh] bg-[#EEEEEE] flex flex-col items-center gap-16 px-6 sm:px-8 md:px-16'>
+
             <h1 className='text-[#252525] text-[32px] sm:text-[40px] mt-16 text-center'>
                 What our <span className='text-[#468585]'>customers</span> say
             </h1>
@@ -14,7 +15,7 @@ const Testimonials = () => {
                         <img src="./rahulsharma.png" alt="" />
                     </div>
                     <div>
-                        <h1 className='text-[#024444] text-2xl lg:text-3xl'>Rahul Sharma</h1>
+                        <h1 className='text-[#024444] text-2xl lg:text-2xl'>Rahul Sharma</h1>
                         <p className='text-[#949494] text-md lg:text:lg font-[300]'>Regular customer</p>
                     </div>
                     <p className='text-[#474747] text-lg font-[400] mb-4'>“Great medical store in Nashik. My personal experience with Gunwant Store was fabulous and awesome.”</p>
@@ -32,7 +33,7 @@ const Testimonials = () => {
                         <img src="./rahulsharma.png" alt="" />
                     </div>
                     <div>
-                        <h1 className='text-[#024444] text-2xl lg:text-3xl'>Rahul Sharma</h1>
+                        <h1 className='text-[#024444] text-2xl lg:text-2xl'>Rahul Sharma</h1>
                         <p className='text-[#949494] text-md lg:text:lg font-[300]'>Regular customer</p>
                     </div>
                     <p className='text-[#474747] text-lg font-[400] mb-4'>“Great medical store in Nashik. My personal experience with Gunwant Store was fabulous and awesome.”</p>
@@ -50,7 +51,7 @@ const Testimonials = () => {
                         <img src="./rahulsharma.png" alt="" />
                     </div>
                     <div>
-                        <h1 className='text-[#024444] text-2xl lg:text-3xl'>Rahul Sharma</h1>
+                        <h1 className='text-[#024444] text-2xl lg:text-2xl'>Rahul Sharma</h1>
                         <p className='text-[#949494] text-md lg:text:lg font-[300]'>Regular customer</p>
                     </div>
                     <p className='text-[#474747] text-lg font-[400] mb-4'>“Great medical store in Nashik. My personal experience with Gunwant Store was fabulous and awesome.”</p>
