@@ -9,8 +9,9 @@ const GetInTouch = () => {
                     Get in touch
                 </h1>
                 <p className='text-[#7A7676] font-light text-lg lg:text-xl'>
-                    Reach out to us for any queries, assistance, or support—we're here to help!
+                    Reach out to us for any queries, assistance, or support—we&apos;re here to help!
                 </p>
+
                 <div className='flex flex-col gap-6'>
                     <div className='flex flex-row gap-5 items-start'>
                         <img src="./getintouch-call.png" alt="Call" className='w-6 lg:w-8' />
