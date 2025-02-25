@@ -8,7 +8,7 @@ const FeaturedCategories = () => {
 
             <div className='flex px-6 flex-col gap-5'>
                 <div className='flex flex-col lg:flex-row gap-5'>
-                    <div className="relative overflow-hidden rounded-md">
+                    <div className="relative overflow-hidden rounded-xl">
                         <div className="overflow-hidden">
                             <img
                                 src="/medicines.png"
@@ -32,7 +32,7 @@ const FeaturedCategories = () => {
                 </div>
 
                 <div className='flex flex-col lg:flex-row gap-5'>
-                    <div className="relative overflow-hidden rounded-md">
+                    <div className="relative overflow-hidden rounded-xl">
                         <div className="overflow-hidden">
                             <img
                                 src="/suppliments.png"
@@ -43,7 +43,7 @@ const FeaturedCategories = () => {
                         <h1 className="absolute bottom-4 left-5 text-2xl text-white">Suppliments</h1>
                     </div>
 
-                    <div className="relative overflow-hidden rounded-md">
+                    <div className="relative overflow-hidden rounded-xl">
                         <div className="overflow-hidden">
                             <img
                                 src="/energy.png"
