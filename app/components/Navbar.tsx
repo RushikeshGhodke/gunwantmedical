@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between gap-4">
                     <Image src={`/logo.png`} alt={`logo`} width={24} height={40}/>
                     <h1 className="text-[16px] tracking-wide lg:text-[20px]">
-                        Gunwant Medical
+                        Gunwant Medicals
                     </h1>
                 </div>
 
