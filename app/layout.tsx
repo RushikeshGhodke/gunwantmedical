@@ -1,3 +1,5 @@
+// @ts-ignore
+
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -45,18 +47,13 @@ const stolzl = localFont({
     ]
 });
 
-// @ts-ignore
 export const metadata: Metadata = {
     title: "Gunwant Medicals - Your Trusted Pharmacy in Nashik",
     description: "Gunwant Medicals is your one-stop medicine shop in Nashik, offering fast medicine delivery, expert healthcare advice, and digital prescriptions. Rated 4.8/5 on Google!",
-    keywords: "Gunwant Medicals, pharmacy Nashik, online medicine delivery Nashik, healthcare, digital prescriptions, trusted pharmacy",
-    author: "Gunwant Medicals",
-    ogTitle: "Gunwant Medicals - Your Trusted Pharmacy in Nashik",
-    ogDescription: "Get your medicines delivered in just 30 minutes! Gunwant Medicals in Nashik provides expert healthcare solutions, digital prescriptions, and quality service.",
-    ogUrl: "https://gunwantmedicals.com",
-    twitterTitle: "Gunwant Medicals - Fast & Reliable Pharmacy in Nashik",
-    twitterDescription: "Order medicines easily with Gunwant Medicals in Nashik. Fast delivery, expert guidance, and a 4.8/5 Google rating!",
+    keywords: "Gunwant Medicals, pharmacy Nashik, online medicine delivery Nashik, healthcare, digital prescriptions, trusted pharmacy, Instagram",
+    authors: [{ name: "Gunwant Medicals", url: "https://gunwantmedicals.com" }],
 };
+
 
 
 export default function RootLayout({
