@@ -1,9 +1,8 @@
-// @ts-ignore
+import type {Metadata} from "next";
 
-import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Instrument_Sans } from 'next/font/google';
+import {Instrument_Sans} from 'next/font/google';
 
 const instrumentSans = Instrument_Sans({
     subsets: ['latin'], // Specify the required subsets
@@ -51,10 +50,25 @@ export const metadata: Metadata = {
     title: "Gunwant Medicals - Your Trusted Pharmacy in Nashik",
     description: "Gunwant Medicals is your one-stop medicine shop in Nashik, offering fast medicine delivery, expert healthcare advice, and digital prescriptions. Rated 4.8/5 on Google!",
     keywords: "Gunwant Medicals, pharmacy Nashik, online medicine delivery Nashik, healthcare, digital prescriptions, trusted pharmacy, Instagram",
-    authors: [{ name: "Gunwant Medicals", url: "https://gunwantmedicals.com" }],
+    authors: [
+        {name: "Gunwant Medicals", url: "https://gunwantmedicals.com"},
+        {name: "Gunwant Medicals Instagram", url: "https://www.instagram.com/gunwantmedicals/"}
+    ],
 
+    openGraph: {
+        type: "website",
+        url: "https://gunwantmedicals.com",
+        title: "Gunwant Medicals - Your Trusted Pharmacy in Nashik",
+        description: "Fast medicine delivery, expert healthcare advice, and digital prescriptions in Nashik. Rated 4.8/5 on Google!",
+        images: [{
+            url: "https://gunwantmedicals.com/logo.png",
+            width: 1200,
+            height: 630,
+            alt: "Gunwant Medicals - Your Trusted Pharmacy"
+        }],
+        siteName: "Gunwant Medicals",
+    },
 };
-
 
 
 export default function RootLayout({
