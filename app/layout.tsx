@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     description: "Gunwant Medicals is your one-stop medicine shop in Nashik, offering fast medicine delivery, expert healthcare advice, and digital prescriptions. Rated 4.8/5 on Google!",
     keywords: "Gunwant Medicals, pharmacy Nashik, online medicine delivery Nashik, healthcare, digital prescriptions, trusted pharmacy, Instagram",
     authors: [{ name: "Gunwant Medicals", url: "https://gunwantmedicals.com" }],
+
 };
 
 
@@ -63,6 +64,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+        <meta name="google-site-verification" content="FoQT88B4tCW97ldyylIlcNBdO9flXx2ZbfkWCjEYHpA"/>
         <body className={`${stolzl.className} ${instrumentSans.className} antialiased`}>
         {children}
         </body>
