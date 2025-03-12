@@ -1,8 +1,8 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 
 import "./globals.css";
 import localFont from "next/font/local";
-import {Instrument_Sans} from 'next/font/google';
+import { Instrument_Sans } from 'next/font/google';
 
 const instrumentSans = Instrument_Sans({
     subsets: ['latin'], // Specify the required subsets
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     description: "Gunwant Medicals is your one-stop medicine shop in Nashik, offering fast medicine delivery, expert healthcare advice, and digital prescriptions. Rated 4.8/5 on Google!",
     keywords: "Gunwant Medicals, pharmacy Nashik, online medicine delivery Nashik, healthcare, digital prescriptions, trusted pharmacy, Instagram",
     authors: [
-        {name: "Gunwant Medicals", url: "https://gunwantmedicals.com"},
-        {name: "Gunwant Medicals Instagram", url: "https://www.instagram.com/gunwantmedicals/"}
+        { name: "Gunwant Medicals", url: "https://gunwantmedicals.com" },
+        { name: "Gunwant Medicals Instagram", url: "https://www.instagram.com/gunwantmedicals/" }
     ],
 
     openGraph: {
@@ -68,20 +68,40 @@ export const metadata: Metadata = {
         }],
         siteName: "Gunwant Medicals",
     },
+
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon.ico',
+        apple: '/apple-touch-icon.png',
+        other: [
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '32x32',
+                url: '/favicon.png',
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '16x16',
+                url: '/favicon.png',
+            }
+        ],
+    },
 };
 
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-        <meta name="google-site-verification" content="FoQT88B4tCW97ldyylIlcNBdO9flXx2ZbfkWCjEYHpA"/>
-        <body className={`${stolzl.className} ${instrumentSans.className} antialiased`}>
-        {children}
-        </body>
+            <meta name="google-site-verification" content="FoQT88B4tCW97ldyylIlcNBdO9flXx2ZbfkWCjEYHpA" />
+            <body className={`${stolzl.className} ${instrumentSans.className} antialiased`}>
+                {children}
+            </body>
         </html>
     );
 }
